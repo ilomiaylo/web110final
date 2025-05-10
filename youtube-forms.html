@@ -1,0 +1,125 @@
+<!-- Name: Ilayda Orhan -->
+<!-- Date: May 8, 2025 -->
+<!-- Subject: YouTube Survey Form -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Embedded style sheet for the form (as required) -->
+  <style>
+    form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: auto;
+      margin-top: 20px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #005c99;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>YouTube Survey Form</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="objectives.html">Course Objectives</a></li>
+      <li><a href="youtube.html">YouTube</a></li>
+      <li><a href="top-Youtubers.html">Top YouTubers</a></li>
+      <li><a href="youtube-forms.html">Form page</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form action="#" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="youtuber">Would you like to become a YouTuber after what you've learned?</label>
+      <select id="youtuber" name="youtuber">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="maybe">Maybe</option>
+      </select>
+
+      <label>What content would you like to see more on YouTube?</label>
+      <input type="checkbox" name="content" value="vlogs" /> Vlogs
+      <input type="checkbox" name="content" value="education" /> Educational Videos
+      <input type="checkbox" name="content" value="music" /> Music
+      <input type="checkbox" name="content" value="gaming" /> Gaming
+      <input type="checkbox" name="content" value="tutorials" /> Tutorials
+
+      <label for="genre">What type of YouTube videos do you enjoy the most?</label>
+      <textarea id="genre" name="genre" rows="3" placeholder="Tell us what you love watching..."></textarea>
+
+      <label>How often do you visit YouTube?</label>
+      <input type="radio" name="frequency" value="daily" /> Daily
+      <input type="radio" name="frequency" value="weekly" /> Weekly
+      <input type="radio" name="frequency" value="rarely" /> Rarely
+
+      <label for="purpose">Do you use YouTube mainly for:</label>
+      <select id="purpose" name="purpose">
+        <option value="music">Listening to music</option>
+        <option value="videos">Watching videos</option>
+        <option value="both">Both</option>
+      </select>
+
+      <label for="premium">Do you use YouTube Premium?</label>
+      <select id="premium" name="premium">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="date">Today's Date:</label>
+      <input type="date" id="date" name="date" />
+
+      <label for="comments">Any thoughts you'd like to share?</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <input type="submit" value="Submit Survey" />
+      <input type="reset" value="Reset Form" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ilayda Orhan</p>
+  </footer>
+</body>
+</html>
